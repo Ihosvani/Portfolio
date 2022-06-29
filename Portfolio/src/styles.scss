@@ -22,3 +22,85 @@
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
 }
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css");
+
+body{
+  margin: 0px;
+
+}
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+i{
+  margin: 20px 150px 20px 150px;
+  text-align: center;
+  font-size: 125px;
+}
+
+.navbar{
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar-item-left{
+  color:white;
+  position: relative;
+  float: left;
+  margin: 10px 15px 0px 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icon{
+  background-color: none;
+}
+
+.navbar-item-right{
+  border: 2px;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  background-color: gray;
+  position: relative;
+  float: right;
+  margin: 13px 15px 0px 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s linear;
+}
+
+.navbar-item-right:hover{
+  background-color: rgb(48, 48, 48);
+
+}
+
+.container{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid;
+}
+
+.text-container{
+  max-width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.container-title{
+  text-align: center;
+  align-self: flex-start;
+  width: 100%;
+}

@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css");
 
 body{
   margin: 0px;
+
 }
 *{
   font-family: "Poppins", sans-serif;
@@ -10,8 +12,14 @@ body{
   padding: 0px;
 }
 
+i{
+  margin: 20px 150px 20px 150px;
+  text-align: center;
+  font-size: 125px;
+}
+
 .navbar{
-  position: sticky;
+  position: fixed;
   height: 60px;
   width: 100%;
   background-color: black;
@@ -50,10 +58,10 @@ body{
 }
 
 .container{
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-height: 700px;
   border-bottom: 1px solid;
 }
 
@@ -67,5 +75,8 @@ body{
   align-content: space-around;
 }
 
-
-
+.container-title{
+  text-align: center;
+  align-self: flex-start;
+  width: 100%;
+}

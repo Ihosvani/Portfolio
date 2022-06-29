@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProgrammingSkillsComponent } from './programming-skills/programming-skills.component';
 import { EducationComponent } from './education/education.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LanguagesComponent } from './languages/languages.component';
     ProfileComponent,
     ProgrammingSkillsComponent,
     EducationComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

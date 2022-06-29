@@ -1,5 +1,9 @@
-<div class="container">
+<div *ngFor="let project of projects, let indexOfProject=index" class="container">
   <div class="personal-project">
-    <img src="" alt="">
+    <img src="../../assets/{{project}}" alt="Project #{{indexOfProject}}">
+    <p></p>
+  </div>
+  <div class="text-container">
+    <p>{{projectDescription[indexOfProject]}}</p>
   </div>
 </div>

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalProjectsComponent implements OnInit {
 
+  projects: string[] = ["task manager.jfif"];
+  projectDescription: string[] = ["Project Description"];
+
   constructor() { }
 
   ngOnInit(): void {

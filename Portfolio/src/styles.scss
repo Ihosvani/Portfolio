@@ -19,7 +19,7 @@ i{
 }
 
 .navbar{
-  position: fixed;
+  position: sticky;
   height: 60px;
   width: 100%;
   background-color: black;
@@ -78,4 +78,8 @@ i{
   text-align: center;
   align-self: flex-start;
   width: 100%;
+}
+
+.container-vertical{
+  flex-direction: column;
 }

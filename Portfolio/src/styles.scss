@@ -8,12 +8,13 @@ body{
   flex-direction: column;
   padding: 0px;
   margin: 0px;
-  background-color: aquamarine;
-  width: 100%;
+  background-color: #5298C1;
   margin: 0px;
   padding: 0px;
   align-content: stretch;
   align-items: stretch;
+  color:white;
+  overflow-x: hidden;
 }
 *{
   font-family: "Poppins", sans-serif;
@@ -34,7 +35,7 @@ i{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: black;
+  background-color: #63747A;
 }
 
 .navbar-left{
@@ -60,7 +61,7 @@ i{
 
 .right{
   color:white;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.979);
   margin: 0px 20px 0px 20px;
   padding: 5px;
   border-radius: 10px;
@@ -77,7 +78,6 @@ i{
 }
 
 .container{
-  width: 100%;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
@@ -86,30 +86,28 @@ i{
 }
 
 .inside-container{
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-between;
-  justify-content: space-between;
-  justify-items: center;
 }
 
 .text-container{
-  max-width: 500px;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
+  flex-direction: row;
   border: 2px black solid;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
-  background-color: #1b346b;
+  background-color: #123175;
   padding: 20px;
   margin: 20px;
   color: white;
 }
 
+.text-normal{
+  align-items: self-start;
+}
 .container-title{
   text-align: center;
   align-self: flex-start;
@@ -120,12 +118,20 @@ i{
   flex-direction: column;
 }
 
+.container-horizontal{
+  flex-direction: row;
+}
+
+.container-wrap{
+  flex-wrap: wrap;
+}
+
 .footer{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(78, 78, 78);
+  background-color: #C0C2C9;
   max-height: 100vh;
   width: 100%;
 }
@@ -139,3 +145,7 @@ main{
   align-content: space-between;
   flex-wrap: wrap;
 }
+
+.same_size{
+  flex: 1 1 50%;
+ }

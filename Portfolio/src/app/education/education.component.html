@@ -1,9 +1,8 @@
 <div class="container container-vertical">
-  <h1>Education</h1>
-  <div class="inside-container">
-    <div *ngFor="let education of educations">
-    <div class="inside-container">
-      <div class="text-container">
+  <h1 class="container-title">Education</h1>
+  <div *ngFor="let education of educations" class="inside-container container-horizontal">
+    <div class="inside-container container-horizontal">
+      <div class="inside-container container-vertical container-wrap same_size">
         <div class="container-title">
           <h1>{{education.name}}</h1>
         </div>
@@ -11,13 +10,13 @@
         <h1>{{education.career}}</h1>
         <img src="{{education.logo}}" alt="{{education.name}}" style="width: 400px; height: 300px;">
       </div>
-      <div class="text-container">
-        <div *ngFor="let experience of education.experiences">
+      <div class="inside-container container-vertical same_size">
+        <div class="container-title">
+          <h1>Experience</h1>
+        </div>
+        <div class="text-container container-vertical" *ngFor="let experience of education.experiences">
           <li>{{experience}}</li>
         </div>
       </div>
-    </div>
   </div>
-  </div>
-
 </div>

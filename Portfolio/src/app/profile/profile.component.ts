@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  personalDescription: string = "I am an ambitious and driven web developer. Driven by new knowledge and willing to learn any new technology related with Computer Science"
+  personalDescription: string = "I am an ambitious and driven software engineer. Driven by new knowledge and willing to learn any new technology related with Computer Science"
 
   constructor() { }
 

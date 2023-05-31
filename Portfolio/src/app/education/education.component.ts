@@ -18,7 +18,7 @@ export class EducationComponent implements OnInit {
     let FIU: Education = {} as Education;
 
     FIU.career = "Computer Science";
-    FIU.logo = "../../assets/fiu_logo.png";
+    FIU.logo = "assets/fiu_logo.png";
     FIU.endDate = new Date();
     FIU.endDate.setFullYear(2023);
     FIU.endDate.setMonth(5);

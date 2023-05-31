@@ -1,0 +1,12 @@
+<div *ngFor="let project of projects, let indexOfProject=index" class="container">
+  <h2 class="container-title">
+    Main Personal Project #{{indexOfProject}}
+  </h2>
+  <div class="personal-project">
+    <img src="../../assets/{{project}}" alt="Project #{{indexOfProject}}">
+    <p></p>
+  </div>
+  <div class="text-container">
+    <p>{{projectDescription[indexOfProject]}}</p>
+  </div>
+</div>

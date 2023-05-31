@@ -1,0 +1,23 @@
+<div class="container container-vertical">
+  <h1>Education</h1>
+  <div class="inside-container">
+    <div *ngFor="let education of educations">
+    <div class="inside-container">
+      <div class="text-container">
+        <div class="container-title">
+          <h1>{{education.name}}</h1>
+        </div>
+        <p>{{education.startDate.toLocaleDateString()}}, {{education.endDate.toLocaleDateString()}}</p>
+        <h1>{{education.career}}</h1>
+        <img src="{{education.logo}}" alt="{{education.name}}" style="width: 400px; height: 300px;">
+      </div>
+      <div class="text-container">
+        <div *ngFor="let experience of education.experiences">
+          <li>{{experience}}</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>

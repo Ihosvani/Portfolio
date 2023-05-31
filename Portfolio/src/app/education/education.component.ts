@@ -9,6 +9,9 @@ export class EducationComponent implements OnInit {
 
   constructor() { }
 
+  educations: String[] = ["Florida International University"]
+
+
   ngOnInit(): void {
   }
 

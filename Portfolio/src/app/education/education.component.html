@@ -1,8 +1,8 @@
 <div class="container container-vertical">
   <h1>Education</h1>
-  <div class="inside-container">
+  <div class="inside-container container-horizontal">
     <div *ngFor="let education of educations">
-    <div class="inside-container">
+    <div class="inside-container container-horizontal">
       <div class="text-container">
         <div class="container-title">
           <h1>{{education.name}}</h1>
@@ -11,7 +11,7 @@
         <h1>{{education.career}}</h1>
         <img src="{{education.logo}}" alt="{{education.name}}" style="width: 400px; height: 300px;">
       </div>
-      <div class="text-container">
+      <div class="text-container text-normal">
         <div *ngFor="let experience of education.experiences">
           <li>{{experience}}</li>
         </div>

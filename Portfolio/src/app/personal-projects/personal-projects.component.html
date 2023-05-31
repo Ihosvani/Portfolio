@@ -1,12 +1,30 @@
-<div *ngFor="let project of projects, let indexOfProject=index" class="container">
-  <h2 class="container-title">
-    Main Personal Project #{{indexOfProject}}
-  </h2>
-  <div class="personal-project">
-    <img src="../../assets/{{project}}" alt="Project #{{indexOfProject}}">
-    <p></p>
+<h1 class="container-title">
+  Main Personal Projects
+</h1>
+<div *ngFor="let main_personal_project of main_personal_projects, let indexOfProject=index" class="container container-vertical">
+  <div class="inside-container container-horizontal">
+    <div class="inside-container container-vertical same_size">
+      <h2 class="container-title">{{main_personal_project.name}}</h2>
+      <a href="{{main_personal_project.github_url}}" target="_blank">Github Link</a>
+      <p>{{main_personal_project.date_of_completion?.toLocaleDateString()}}</p>
+      <a href="{{main_personal_project.url}}" target="_blank">Live demo</a>
+      <img src="{{main_personal_project.picture}}" alt="Project #{{indexOfProject}}" style="width: 400px; height: 700px;">
+    </div>
+    <div class="inside-container container-horizontal same_size container-wrap">
+      <h1 class="container-title">Experiences</h1>
+      <div *ngFor="let reward_experience of main_personal_project.reward_experiences" class="text-container container-vertical same_size">
+        <li>{{reward_experience}}</li>
+      </div>
+    </div>
   </div>
-  <div class="text-container">
-    <p>{{projectDescription[indexOfProject]}}</p>
+  <div class="inside-container container-horizontal">
+    <div class="inside-container container-horizontal container-wrap same_size">
+      <h1 class="container-title">Stack</h1>
+      <i *ngFor="let icon of main_personal_project.stack" class="{{icon}}"></i>
+    </div>
+    <div class="inside-container same_size">
+      <div class="container-title">System Design</div>
+      <img src="{{main_personal_project.system_design}}" alt="System Design not avaliable" style="width: 600px;">
+    </div>
   </div>
 </div>
